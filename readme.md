@@ -2,6 +2,10 @@
 
 An event-driven typewriter made with turtle module of python. 
 
+## Motivation
+
+I initially made this program just to write "Happy Birthday" to my cousin, because i had no gift, but then i had the idea to control it using the keyboard/mouse and turned it in a "typewriter".
+
 ## Prerequisites
 
 * Python 3.x
@@ -14,10 +18,10 @@ An event-driven typewriter made with turtle module of python.
 
 Before instructing about how to use the program, it's important to highlight some constraints:
 
-* When the user do any event and the cursor start moving, they have to wait it to stop moving before doing any other event, otherwise the next event handler will start execution **DURING** the execution of the latter which will result in unexpected drawings/actions. Nonetheless, the cursor is setted to be as fast as possible and even if the user "mess up", it's still possible to undo actions until the desired past one using the **backspace key**.
+* When the user do any event and the cursor start moving, they have to wait it to stop moving before doing any other event, otherwise the next event handler will start execution **DURING** the execution of the latter which will result in unexpected drawings/actions. Nonetheless, the cursor is setted to be as fast as possible and even if the user "messes up", it's still possible to undo actions until the desired past one using the **backspace key**.
 * If the user try to undo actions past the first event they did, the result will be the cursor going to the axis origin and having no color. The reason for this is because, the initial cursor placement and pen color setting are actions made before the user do anything.
 * The letter keys the user press have to be absent of accents and within the english alphabet, so letters such as "ä" or "ç" will not be listened by the program and will have no effect. 
-* I wrote the letters based in a seven segment display format, because it was easier to measure distance between lines, letters and so on and so forth. The consequences are some weird and not intuitive letters such as "k", "m", "w", "x" and "z". There's a screenshot showing them(in the listed order) in the *Screenshot* section.
+* I wrote the letters based in a seven segment display format, because it was easier to measure distance between lines, letters and so on and so forth. The consequences are some weird and not intuitive letters such as "k", "m", "w", "x" and "z". The last screenshot show them(at this order) in the *Screenshot* section.
 
 ## How to use
 
